@@ -1,6 +1,6 @@
 useradd deployer
 usermod -aG wheel deployer
-echo "%wheel   ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers << EOF
+echo "%wheel   ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers
 mkdir /home/deployer/.ssh
 chown deployer:deployer /home/deployer/.ssh
 chmod 700 /home/deployer/.ssh
